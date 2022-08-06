@@ -18,15 +18,13 @@ jobs:
     - run: echo "This job's status is ${{ job.status }}."
   
   stale:
-        runs-on: ubuntu-latest
-        permissions:
-          issues: write
-        steps:
-          - uses: actions/stale@v5
-            with:
-              repo-token: ${{ secrets.SECRETS }}
-              stale-issue-message: 'Due to the lack of activity, this issue is stale.'
-              close-issue-message: 'Issue closed due to inactivity.'
-              stale-issue-label: 'no-issue-activity-happening'
-              days-before-issue-stale: 1
-              days-before-issue-close: 2
+     runs-on: ubuntu-latest
+     steps:
+      - uses: actions/stale@v5
+        with:
+          repo-token: ${{ secrets.SECRETS }}
+          stale-issue-message: 'Due to the lack of activity, this issue is stale.'
+          close-issue-message: 'Issue closed due to inactivity.'
+          stale-issue-label: 'no-issue-activity-happening'
+          days-before-issue-stale: 1
+          days-before-issue-close: 2

@@ -21,7 +21,7 @@ jobs:
     - uses: actions/stale@v5
       with:
         repo-token: ${{ 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 }}
-        stale-issue-message: 'Stale'
+        stale-issue-message: 'Issue stale due to inactivity'
         days-before-stale: 1
         days-before-close: 2
           

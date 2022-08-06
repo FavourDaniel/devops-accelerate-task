@@ -26,7 +26,7 @@ jobs:
             with:
               repo-token: ${{ secrets.GITHUB_TOKEN }}
               stale-issue-message: 'Due to the lack of activity, this issue is stale.'
-              close-issue-message: 'Due to the issue being inactive for two days, this issue is closed.'
+              close-issue-message: 'Issue closed due to inactivity.'
               stale-issue-label: 'no-issue-activity-happening'
               days-before-issue-stale: 1
               days-before-issue-close: 2

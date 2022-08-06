@@ -24,7 +24,7 @@ jobs:
         steps:
           - uses: actions/stale@v5
             with:
-              repo-token: ${{ secrets.GITHUB_TOKEN }}
+              repo-token: ${{ secrets.SECRETS }}
               stale-issue-message: 'Due to the lack of activity, this issue is stale.'
               close-issue-message: 'Issue closed due to inactivity.'
               stale-issue-label: 'no-issue-activity-happening'

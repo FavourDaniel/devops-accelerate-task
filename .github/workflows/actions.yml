@@ -21,7 +21,7 @@ jobs:
     - run: echo "This job's status is ${{ job.status }}."
     - uses: actions/stale@v5
       with:
-        repo-token: ${{ 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 }}
+        repo-token: ${{ secrets.REPO_TOKEN }}
         stale-issue-message: 'Issue stale due to inactivity'
         days-before-stale: 1
         days-before-close: 2
